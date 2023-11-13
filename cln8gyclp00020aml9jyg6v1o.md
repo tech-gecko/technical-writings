@@ -77,4 +77,6 @@ If this post was helpful to you, then you should consider following us or subscr
 
 If you have any questions you need answers to, comment them below!
 
-***Next Topic - Shell Navigation: Commands and Scripting***
+***Next Topic:***
+
+%[https://techgecko.hashnode.dev/shell-navigation]
