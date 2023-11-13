@@ -307,4 +307,6 @@ As the commands discussed here allow multiple filenames and directories as input
 | `mv` &lt;**dir1&gt;** ../\*.bak &lt;**dir2&gt;** | Transfer the subdirectory &lt;**dir1&gt;** and all files with names ending in ".bak" from the parent directory of the current working directory to an existing directory called &lt;**dir2&gt;**. |
 | rm \*~ | Remove all files in the current working directory that have names ending with the character "~". Certain applications generate backup files following this naming convention. Executing this command will clear these files from the directory. |
 
-***Next Topic: Introduction to Text Editors: Vi(m) and Emacs.***
+***Are you lost? The link to the first topic of this series is embedded below.***
+
+%[https://techgecko.hashnode.dev/shell-basics]
