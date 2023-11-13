@@ -79,4 +79,8 @@ If you have any questions you need answers to, comment them below!
 
 ***Next Topic:***
 
-%[https://techgecko.hashnode.dev/shell-navigation]
+%[https://techgecko.hashnode.dev/shell-navigation] 
+
+### Conclusion
+
+I trust that your enjoyment in reading this matches the pleasure I experienced while composing it. If you would like to see more content of the same nature, then navigate to the menu and follow my socials. There, I record the majority of what I'm learning and the projects I'm currently engaged in.
