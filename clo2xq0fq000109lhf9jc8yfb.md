@@ -309,4 +309,8 @@ As the commands discussed here allow multiple filenames and directories as input
 
 ***Are you lost? The link to the first topic of this series is embedded below.***
 
-%[https://techgecko.hashnode.dev/shell-basics]
+%[https://techgecko.hashnode.dev/shell-basics] 
+
+### Conclusion
+
+I trust that your enjoyment in reading this matches the pleasure I experienced while composing it. If you would like to see more content of the same nature, then navigate to the menu and follow my socials. Here, I record the majority of what I'm learning and the projects I'm currently engaged in.
