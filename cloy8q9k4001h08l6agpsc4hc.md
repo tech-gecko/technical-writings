@@ -110,4 +110,4 @@ Outlined in the table below are the basic vi/vim commands. Remember that "\*" is
 
 ### Conclusion
 
-I trust that your enjoyment in reading this matches the pleasure I experienced while composing it. If you would like to see more content of the same nature, then navigate to the menu and follow my socials. Here, I record the majority of what I'm learning and the projects I'm currently engaged in.
+I hope you found this content as enjoyable to read as I did to write. If you are interested in more content like this, please navigate to my profile and follow my social media channels. There, I document most of what I am learning and the projects I am currently working on.
