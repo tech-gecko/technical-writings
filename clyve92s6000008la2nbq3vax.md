@@ -12,7 +12,7 @@ Today, I'm going to tell a story. It's a story for both techies and non-techies.
 
 I'm going to explain how it works step-by-step, so you understand what happens and the processes involved. Each sub-heading will guide you through the steps (they are in order). Let's dive right in.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1721329416004/a96276d0-ed0d-44ba-bb4f-010174c1728a.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1721577460666/76043ad6-ca02-4ba5-b8b8-452b71604e3e.jpeg align="center")
 
 ### DNS Request
 
@@ -99,7 +99,7 @@ The load balancer works by:
 
 **Health Checks:** The load balancer regularly checks the health of servers and only sends traffic to healthy ones.
 
-**Session Persistence:** The load balancer can use session persistence (sticky sessions) to make sure that future requests from the same client go to the same server.  
+**Session Persistence:** The load balancer can use session persistence (sticky sessions) to make sure that future requests from the same client go to the same server.
 
 ### Web Server
 
