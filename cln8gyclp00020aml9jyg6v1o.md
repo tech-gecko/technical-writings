@@ -62,7 +62,7 @@ There are more shell types than the ones outlined below, hence the word "main". 
 
 * ***The Bourne shell (sh)*** - The first ever type of shell, programmed by Stephen Bourne in AT&T. It is also known as the Primary Unix Shell. Examples are ksh, sh and Bash.
     
-* ***The*** ***C*** ***shell*** ***(csh)*** - The Unix enhancement shell, written by Bill Joy.
+* ***TheCshell(csh)*** - The Unix enhancement shell, written by Bill Joy.
     
 
 ### Shell Prompt
@@ -83,4 +83,4 @@ If you have any questions you need answers to, comment them below!
 
 ### Conclusion
 
-I trust that your enjoyment in reading this matches the pleasure I experienced while composing it. If you would like to see more content of the same nature, then navigate to the menu and follow my socials. There, I record the majority of what I'm learning and the projects I'm currently engaged in.
+I hope you found this content as enjoyable to read as I did to write. If you are interested in more content like this, please navigate to my profile and follow my social media channels. There, I document most of what I am learning and the projects I am currently working on.
