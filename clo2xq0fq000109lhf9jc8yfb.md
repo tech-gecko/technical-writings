@@ -99,14 +99,14 @@ The `ls` command lists all files and directories within the current working dire
 | Command | What it does |
 | --- | --- |
 | `ls` | lists all files and directories within the current working directory. |
-| `ls` **\-l** | lists all files and directories within the current working directory in the long format. |
-| `ls` **/usr** | lists all files and directories within the "usr" directory. |
-| `ls` **\-l /usr /proc** | lists all files and directories within the "usr" and "proc" directories in the long format. |
-| `ls` **\-la ..** | lists all files and directories (including hidden ones) in the parent directory of the current working directory in the long format. |
+| `ls`**\-l** | lists all files and directories within the current working directory in the long format. |
+| `ls`**/usr** | lists all files and directories within the "usr" directory. |
+| `ls`**\-l /usr /proc** | lists all files and directories within the "usr" and "proc" directories in the long format. |
+| `ls`**\-la ..** | lists all files and directories (including hidden ones) in the parent directory of the current working directory in the long format. |
 
 These examples also point out an important concept about commands. Most commands operate like this:
 
-`command` *\-option(s)* **&lt;argument(s)&gt;**
+`command`*\-option(s)***&lt;argument(s)&gt;**
 
 where `command` is the name of the command, *options* are flags that modify the bahaviour of the command, and **arguments** are the "object(s)" on which the command operates.
 
@@ -146,11 +146,11 @@ Text, in ASCII, adheres to a simple principle where characters are mapped to spe
 
 The `less` command is used in this way:
 
-`less` **&lt;text\_filename&gt;**
+`less`**&lt;text\_filename&gt;**
 
 and this will display the file to be read (not edited).
 
-**Navigating text files with** `less`
+**Navigating text files with**`less`
 
 | Command | What it does |
 | --- | --- |
@@ -169,7 +169,7 @@ While exploring our Linux system, it's beneficial to identify the type of data a
 
 The `file` command is used in this way:
 
-`file` **&lt;file\_name&gt;**
+`file`**&lt;file\_name&gt;**
 
 The `file` command recognizes a wide range of file types. While it may seem that most files cannot be viewed as text, a surprising number can be. This is especially true of the important configuration files. During our adventure we will see that many features of the operating system are controlled by text configuration files and shell scripts. In Linux, there are no secrets!
 
@@ -238,13 +238,13 @@ The `cp` command copies files and directories. In its simplest form, it copies a
 
 The "..." signifies that an item can be repeated one or more times. Other useful examples of `cp` and its options include:
 
-* `cp` **&lt;file\_1&gt; &lt;file\_2&gt; --&gt;** copies the content of file\_1 into file\_2. If file\_2 does not exist, it is created.
+* `cp`**&lt;file\_1&gt; &lt;file\_2&gt; --&gt;** copies the content of file\_1 into file\_2. If file\_2 does not exist, it is created.
     
-* `cp` *\-i* **&lt;file\_1&gt; &lt;file\_2&gt; --&gt;** since the interactive ("*\-i"*) option is specified, if file\_2 exists, the user is prompted before it is overwritten with the contents of file\_1.
+* `cp`*\-i***&lt;file\_1&gt; &lt;file\_2&gt; --&gt;** since the interactive ("*\-i"*) option is specified, if file\_2 exists, the user is prompted before it is overwritten with the contents of file\_1.
     
-* `cp` **&lt;file\_1&gt; &lt;dir\_1&gt; --&gt;** copies the contents of file\_1 into a file named file\_1 inside of directory dir\_1.
+* `cp`**&lt;file\_1&gt; &lt;dir\_1&gt; --&gt;** copies the contents of file\_1 into a file named file\_1 inside of directory dir\_1.
     
-* `cp` *\-R* **&lt;dir\_1&gt; &lt;dir\_2&gt; --&gt;** copies the contents of the directory dir\_1 into dir\_2. If directory dir\_2 does not exist, it is created. Otherwise, it creates a directory named dir\_1 within directory dir\_2.
+* `cp`*\-R***&lt;dir\_1&gt; &lt;dir\_2&gt; --&gt;** copies the contents of the directory dir\_1 into dir\_2. If directory dir\_2 does not exist, it is created. Otherwise, it creates a directory named dir\_1 within directory dir\_2.
     
 
 ### mv
@@ -261,17 +261,17 @@ Example use cases of `mv` are applied as in `cp` above.
 
 ### rm
 
-The `rm` command removes (deletes) files and directories. We use basic `rm` for files and the recursive `rm` ("`rm` *\-r*") for directories. Usage below:
+The `rm` command removes (deletes) files and directories. We use basic `rm` for files and the recursive `rm` ("`rm`*\-r*") for directories. Usage below:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698063988959/34fd981f-69a2-48cb-8d22-ed45982bc7e7.png align="center")
 
 Example use cases of `rm` and its options include:
 
-* `rm` **&lt;file1&gt; &lt;file2&gt; --&gt;** deletes file1 and file2.
+* `rm`**&lt;file1&gt; &lt;file2&gt; --&gt;** deletes file1 and file2.
     
-* `rm` *\-i* **&lt;file1&gt; &lt;file2&gt; --&gt;** deletes file1 and file2, but first displays a prompt (interactive) each time the deletion is to take place.
+* `rm`*\-i***&lt;file1&gt; &lt;file2&gt; --&gt;** deletes file1 and file2, but first displays a prompt (interactive) each time the deletion is to take place.
     
-* `rm` *\-r* **&lt;dir1&gt; &lt;dir2&gt; --&gt;** deletes directories dir1 and dir2, along with all of their contents (recursive deletion).
+* `rm`*\-r***&lt;dir1&gt; &lt;dir2&gt; --&gt;** deletes directories dir1 and dir2, along with all of their contents (recursive deletion).
     
 
 **Note Below**
@@ -307,7 +307,7 @@ As the commands discussed here allow multiple filenames and directories as input
 | `mv` &lt;**dir1&gt;** ../\*.bak &lt;**dir2&gt;** | Transfer the subdirectory &lt;**dir1&gt;** and all files with names ending in ".bak" from the parent directory of the current working directory to an existing directory called &lt;**dir2&gt;**. |
 | rm \*~ | Remove all files in the current working directory that have names ending with the character "~". Certain applications generate backup files following this naming convention. Executing this command will clear these files from the directory. |
 
-***Next topic:***  
+***Next topic:***
 
 %[https://techgecko.hashnode.dev/vim-text-editor] 
 
@@ -317,4 +317,4 @@ As the commands discussed here allow multiple filenames and directories as input
 
 ### Conclusion
 
-I trust that your enjoyment in reading this matches the pleasure I experienced while composing it. If you would like to see more content of the same nature, then navigate to the menu and follow my socials. Here, I record the majority of what I'm learning and the projects I'm currently engaged in.
+I hope you found this content as enjoyable to read as I did to write. If you are interested in more content like this, please navigate to the menu and follow my social media channels. There, I document most of what I am learning and the projects I am currently working on.
