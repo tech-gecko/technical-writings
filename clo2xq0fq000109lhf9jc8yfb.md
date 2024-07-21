@@ -240,11 +240,11 @@ The "..." signifies that an item can be repeated one or more times. Other useful
 
 * `cp`**&lt;file\_1&gt; &lt;file\_2&gt; --&gt;** copies the content of file\_1 into file\_2. If file\_2 does not exist, it is created.
     
-* `cp`*\-i***&lt;file\_1&gt; &lt;file\_2&gt; --&gt;** since the interactive ("*\-i"*) option is specified, if file\_2 exists, the user is prompted before it is overwritten with the contents of file\_1.
+* `cp`*\-i*\*\*&lt;file\_1&gt; &lt;file\_2&gt; --&gt;\*\* since the interactive ("*\-i"*) option is specified, if file\_2 exists, the user is prompted before it is overwritten with the contents of file\_1.
     
 * `cp`**&lt;file\_1&gt; &lt;dir\_1&gt; --&gt;** copies the contents of file\_1 into a file named file\_1 inside of directory dir\_1.
     
-* `cp`*\-R***&lt;dir\_1&gt; &lt;dir\_2&gt; --&gt;** copies the contents of the directory dir\_1 into dir\_2. If directory dir\_2 does not exist, it is created. Otherwise, it creates a directory named dir\_1 within directory dir\_2.
+* `cp`*\-R*\*\*&lt;dir\_1&gt; &lt;dir\_2&gt; --&gt;\*\* copies the contents of the directory dir\_1 into dir\_2. If directory dir\_2 does not exist, it is created. Otherwise, it creates a directory named dir\_1 within directory dir\_2.
     
 
 ### mv
@@ -269,9 +269,9 @@ Example use cases of `rm` and its options include:
 
 * `rm`**&lt;file1&gt; &lt;file2&gt; --&gt;** deletes file1 and file2.
     
-* `rm`*\-i***&lt;file1&gt; &lt;file2&gt; --&gt;** deletes file1 and file2, but first displays a prompt (interactive) each time the deletion is to take place.
+* `rm`*\-i*\*\*&lt;file1&gt; &lt;file2&gt; --&gt;\*\* deletes file1 and file2, but first displays a prompt (interactive) each time the deletion is to take place.
     
-* `rm`*\-r***&lt;dir1&gt; &lt;dir2&gt; --&gt;** deletes directories dir1 and dir2, along with all of their contents (recursive deletion).
+* `rm`*\-r*\*\*&lt;dir1&gt; &lt;dir2&gt; --&gt;\*\* deletes directories dir1 and dir2, along with all of their contents (recursive deletion).
     
 
 **Note Below**
@@ -317,4 +317,4 @@ As the commands discussed here allow multiple filenames and directories as input
 
 ### Conclusion
 
-I hope you found this content as enjoyable to read as I did to write. If you are interested in more content like this, please navigate to the menu and follow my social media channels. There, I document most of what I am learning and the projects I am currently working on.
+I hope you found this content as enjoyable to read as I did to write. If you are interested in more content like this, please navigate to my profile and follow my social media channels. There, I document most of what I am learning and the projects I am currently working on.
