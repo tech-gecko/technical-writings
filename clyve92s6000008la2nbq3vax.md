@@ -18,7 +18,7 @@ I'm going to explain how it works step-by-step, so you understand what happens a
 
 DNS (Domain Name System) is a system that translates human-friendly computer hostnames into IP addresses. You might wonder, what are hostnames and IP addresses? In simple terms, a hostname is a web address. An IP address, on the other hand, is a unique numeric address that identifies a computer or a node on the internet. It is a string of four numbers separated by periods, such as 192.158.1.38, where each number can range from 0 to 255.
 
-**URL Entry:** When a user enters a URL (e.g., [www.google.com](http://www.example.com)) in the browser, the browser first checks its cache to see if it has a recently retrieved DNS record for the domain.
+**URL Entry:** When a user enters a URL (e.g., [www.google.com](http://www.example.com)) in the browser, the browser first checks its cache to see if it has a recently retrieved the DNS record for the domain.
 
 **Local DNS Cache:** If not found, the request is forwarded to the operating system's DNS cache.
 
@@ -103,7 +103,7 @@ The load balancer works by:
 
 ### Web Server
 
-A web server is computer software and underlying hardware that accepts requests via HTTP or its secure variant HTTPS. A user agent, commonly a web browser or web crawler, initiates communication by making a request for a web page or other resource using HTTP, and the server responds with the content of that resource or an error message. A web server can also accept and store resources sent from the user agent if configured to do so.
+A web server is computer software and underlying hardware that accepts requests via HTTP or its secure variant HTTPS. A user agent, commonly a web browser or web crawler, initiates communication by making a request for a web page or other resource using HTTP(S), and the server responds with the content of that resource or an error message. A web server can also accept and store resources sent from the user agent if configured to do so.
 
 The web server handles requests by:
 
@@ -117,7 +117,7 @@ The web server handles requests by:
 
 An application server hosts applications or software that delivers a business application through a communication protocol. For a typical web application, the application server is located behind the web servers.
 
-An application server framework is a service layer model. It includes software components available to developers through an application programming interface. An application server may have features like clustering, fail-over, and load-balancing. The goal is for developers to focus on the business logic.
+An application server framework is a service layer model. It includes software components available to developers through an application programming interface (API). An application server may have features like clustering, fail-over, and load-balancing. The goal is for developers to focus on the business logic.
 
 Business logic execution:
 
@@ -154,7 +154,7 @@ Database Management:
 
 ### Conclusion
 
-I hope this detailed yet easy-to-understand article has given you some insight into what happens between the time you enter google.com (or any other web address) and when the browser displays the web page or application. If this article wasn't clear enough for you, please send me a DM on [My LinkedIn](https://www.linkedin.com/in/ikechukwu-ashimonye-262944283/).
+I hope this detailed yet easy-to-understand article has given you some insight into what happens between the time you enter "google.com" (or any other web address) and when the browser displays the web page or application. If this article wasn't clear enough for you, please send me a DM on [My LinkedIn](https://www.linkedin.com/in/ikechukwu-ashimonye-262944283/) account.
 
 Interested in Software Engineering? A great place to start is by learning about the Shell. Luckily for you, I have a Software Engineering series where you can follow one article after another, gaining knowledge step by step. You can begin by learning about the shell [here](https://techgecko.hashnode.dev/shell-basics).
 
