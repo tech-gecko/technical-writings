@@ -35,7 +35,7 @@ These types of interfaces are not easy to learn and use. In CLIs, users are only
 
 ### Why should you care about what a shell is?
 
-The shell presents the CLI, that alone is its importance. If on the other hand, you still do not know why the knowledge of a CLI should be important to you, or how it applies to you, then I'll give you some reasons.
+The shell presents the CLI, that alone is its importance. If, on the other hand, you still do not know why the knowledge of a CLI should be important to you, or how it applies to you, then I'll give you some reasons.
 
 * It makes your work ***less boring***, as you can automate repetitive tasks.
     
