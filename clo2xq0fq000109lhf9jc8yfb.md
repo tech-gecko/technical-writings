@@ -8,7 +8,7 @@ tags: linux, shell, linux-for-beginners, linux-commands, shell-navigation
 
 ---
 
-In our last blog post, we introduced the concept of the shell. We explained to the smallest detail possible so that even readers who are not tech enthusiasts could be able to understand the concept.
+In our last blog post, we introduced the concept of the shell. We explained to the barest minimum detail possible so that readers who are not tech enthusiasts could be able to understand the concept.
 
 Today, we are going to focus on shell navigation in terms of basic shell commands and file manipulation.
 
@@ -28,13 +28,13 @@ A notable contrast between Windows and Unix-like operating systems, such as Linu
 
 ### pwd
 
-As the command line interface lacks the visual representation of the file system structure, an alternative method is needed to depict it. Imagine the file system tree as a maze, and envision ourselves within it. At any point, we find ourselves situated in a specific directory. Within this directory, we can observe its files, the route back to its parent directory, and the pathways leading to its subdirectories.
+As the command line interface lacks the visual representation of the file system structure, an alternative method is needed to depict it. Imagine the file system tree as a maze and envision ourselves within it. At any point, we find ourselves situated in a specific directory. Within this directory, we can observe its files, the route back to its parent directory, and the pathways leading to its subdirectories.
 
 This particular directory where we are positioned is termed the ***working directory***. To identify the name of the working directory, we utilize the `pwd` command.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698015053700/8fb3913d-3d27-4a2d-9408-ba02cc74c186.png align="center")
 
-Upon initial login to our Linux system, the working directory is automatically configured to be our home directory, which serves as the designated location for storing our files. Typically, the home directory path follows the format /home/user\_name on many systems. However, it can be customized at the discretion of the system administrator to any other desired location.
+Upon initial login to our Linux system, the working directory is automatically configured to be our home directory, which serves as the designated location for storing our files. Typically, the home directory path follows the format `/home/<username>` on many systems. However, it can be customized at the discretion of the system administrator to any other desired location.
 
 To list the files in the working directory, we use the `ls` command.
 
@@ -42,33 +42,33 @@ To list the files in the working directory, we use the `ls` command.
 
 ### cd
 
-To modify the current working directory within the maze-like file system, we employ the `cd` command. This involves typing `cd` followed by the ***pathname of the target working directory***. A pathname essentially represents the route taken along the branches of the tree to reach the desired directory. Pathnames can be expressed in two distinct manners: ***absolute pathnames*** or ***relative pathnames***. First, let's explore absolute pathnames.
+To modify the current working directory within the maze-like file system, we employ the `cd` command. This involves typing `cd` followed by the ***pathname*** of the target working directory. A pathname essentially represents the route taken along the branches of the tree to reach the desired directory. Pathnames can be expressed in two distinct manners: ***absolute pathnames*** or ***relative pathnames***. First, let's explore absolute pathnames.
 
-An ***absolute pathname*** initiates from the root directory and meticulously follows each branch of the tree until reaching the desired directory or file, outlining the ***complete path***. Consider a directory within your system where the majority of programs are installed, identified by the pathname /usr/bin. In this context, starting from the root directory (indicated by the leading slash in the pathname), there exists a directory named "usr," within which resides another directory named "bin."
+An absolute pathname initiates from the root directory and meticulously follows each branch of the tree until reaching the desired directory or file, outlining the ***complete path***. Consider a directory within your system where the majority of programs are installed, identified by the pathname `/usr/bin`. In this context, starting from the root directory (indicated by the leading slash in the pathname), there exists a directory named ***usr***, within which resides another directory named ***bin***.
 
 In practice, it looks like:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698016559816/847ea7a4-5389-446c-8a22-449349c6f225.png align="center")
 
-Now, it becomes evident that the current working directory has been modified to /usr/bin, and this directory is brimming with files. Can you observe the alteration in the shell prompt? Typically, for convenience, it's configured to exhibit the name of the current working directory.
+Now, it becomes evident that the current working directory has been modified to `/usr/bin`, and this directory is brimming with files. Can you observe the alteration in the shell prompt? Typically, for convenience, it's configured to exhibit the name of the current working directory.
 
-In contrast to ***absolute pathnames*** that start from the root directory and traverse down to the destination, ***relative pathnames*** originate from the working directory. To achieve this, they employ special notations indicating relative positions within the file system tree, namely "." (dot) and ".." (dot dot).
+In contrast to absolute pathnames that start from the root directory and traverse down to the destination, relative pathnames originate from the working directory. To achieve this, they employ special notations indicating relative positions within the file system tree, namely, `.` (dot) and `..` (dot dot).
 
-The "." notation signifies the working directory itself, while ".." indicates the parent directory of the working directory. Here's how these notations function:
+The `.` notation signifies the working directory itself, while `..` indicates the parent directory of the working directory. Here's how these notations function:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698040086013/4d95514f-ed28-447d-a5d7-84aa6aa5e63b.png align="center")
 
-First, we navigated into the /usr/bin folder using the ***absolute pathname*** with `cd`, then we went back to the parent folder, "usr" using the ***relative pathname*** with the ".." notation. Then, we went back to the bin folder using the ***relative pathname*** with the "." notation. Note that the "./" can be ignored most of the time when trying to go into a file or subdirectory within the current directory.
+First, we navigated into the `/usr/bin` folder using the absolute pathname with `cd`, then we went back to the parent folder, `usr` using the relative pathname with the `..` notation. Then, we went back to the `bin` folder using the relative pathname with the `.` notation. Note that the `./` can be ignored most of the time when trying to go into a file or subdirectory within the current directory.
 
-Something worth noting in this example is that, in the first use of "..", it meant the /usr folder which was the parent folder at the time because we were in the usr/bin folder, a subdirectory within that (parent) directory. When "." was used, however, it also meant the /usr directory/folder because it wasn't our parent directory, but our working directory at the time. I hope you understand the difference.
+Something worth noting in this example is that, in the first use of `..`, it meant the `/usr` folder (which was the parent folder at the time because we were in the `usr/bin` folder), a subdirectory within that (parent) directory. When `.` was used, however, it also meant the `/usr` directory (because it wasn't our parent directory, but our working directory at the time). I hope you understand the difference.
 
 **Some shortcuts**
 
-When we enter `cd` without specifying a directory, it will automatically switch the current working directory back to our home directory. Another (slower) method is to use "`cd` ~".
+When we enter `cd` without specifying a directory, it will automatically switch the current working directory back to our home directory. Another (slower) method is to use `cd ~`.
 
-There's another quick method: typing "`cd` ~user\_name". With this command, `cd` will shift the working directory to the home directory of the specified user.
+There's another quick method: typing `cd ~/<username>`. With this command, `cd` will shift the working directory to the home directory of the specified user.
 
-Additionally, typing "`cd` -" directs the working directory to the previous one we were in.
+Additionally, typing `cd -` directs the working directory to the previous one we were in.
 
 **Important facts about file names**
 
@@ -99,22 +99,22 @@ The `ls` command lists all files and directories within the current working dire
 | Command | What it does |
 | --- | --- |
 | `ls` | lists all files and directories within the current working directory. |
-| `ls`**\-l** | lists all files and directories within the current working directory in the long format. |
-| `ls`**/usr** | lists all files and directories within the "usr" directory. |
-| `ls`**\-l /usr /proc** | lists all files and directories within the "usr" and "proc" directories in the long format. |
-| `ls`**\-la ..** | lists all files and directories (including hidden ones) in the parent directory of the current working directory in the long format. |
+| `ls` **\-l** | lists all files and directories within the current working directory in the long format. |
+| `ls /usr` | lists all files and directories within the `usr` directory. |
+| `ls -l /usr/proc` | lists all files and directories within the `usr` and `proc` directories in the long format. |
+| `ls -la ..` | lists all files and directories (including hidden ones) in the parent directory of the current working directory in the long format. |
 
 These examples also point out an important concept about commands. Most commands operate like this:
 
-`command`*\-option(s)***&lt;argument(s)&gt;**
+`command` &lt;***option(s)&lt;*** ***&lt;argument(s)&gt;***
 
-where `command` is the name of the command, *options* are flags that modify the bahaviour of the command, and **arguments** are the "object(s)" on which the command operates.
+where `command` is the name of the command, options are [***flags***](https://www.scaler.com/topics/linux-flag/) that modify the behavior of the command, and **arguments** are the ***object(s)*** on which the command operates.
 
-Considering my fourth example use case of `ls`, `ls` itself is the ***command name***, *\-l* is an ***option***(also called a ***flag***) to list in long format and ***/usr*** and ***/proc*** are the ***arguments*** of the command.
+Considering my fourth example use case of `ls`, `ls` itself is the command name, `-l` is an option (also called a flag) to list in long format and `/usr` and `/proc` are the arguments of the command.
 
 **The Long Format**
 
-Using the *\-l* option with `ls` gives the long format file listing. Check out the image below:
+Using the `-l` option with `ls` gives the long format file listing. Check out the image below:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698044550054/801ecb67-cd79-4950-958f-c05176a81e67.png align="center")
 
@@ -124,13 +124,13 @@ The long format provides information about:
 
 **Modification Time:** The most recent time the file was changed. If the last change occurred over six months ago, the date and year are displayed. Otherwise, the specific time of day is shown.
 
-**Size:** The file's size, measured in bytes.
+**Size:** The file size, measured in bytes.
 
-**Group**: The name of the group that holds file permissions, apart from the file's owner.
+**Group**: The name of the group that holds file permissions, apart from the file owner.
 
 **Owner:** The name of the user who possesses the file.
 
-**File Permissions:** A representation of the file's accessibility rights. The first character signifies the file type - a "-" denotes a regular file, while a "d" indicates a directory. The subsequent three characters indicate the read, write, and execute permissions of the file's owner. The following three represent the group's permissions, and the final three represent the permissions granted to everyone else. A more detailed explanation of this will be provided in an upcoming lesson.
+**File Permissions:** A representation of the file accessibility rights. The first character signifies the file type--a "-" denotes a regular file, while a "d" indicates a directory. The subsequent three characters indicate the read, write, and execute permissions of the file owner. The following three represent the group permissions, and the final three represent the permissions granted to everyone else. A more detailed explanation of this will be provided in an upcoming lesson.
 
 ### less
 
@@ -142,11 +142,11 @@ Representation of information between humans and computers can be done in numero
 
 Various representation systems exhibit differing levels of complexity, ranging from intricate ones like compressed multimedia files to more straightforward formats. One of the earliest and basic systems is known as ASCII text. ASCII, short for American Standard Code for Information Interchange and pronounced as "As-Key," is a straightforward encoding method initially used on Teletype machines to convert keyboard characters into numerical values.
 
-Text, in ASCII, adheres to a simple principle where characters are mapped to specific numbers. This method is highly space-efficient; fifty characters of text equate to fifty bytes of data. Text files in Linux systems often utilize this format, and numerous Linux tools are designed to handle such files. Even in Windows systems, the importance of ASCII text format is acknowledged. For instance, the renowned NOTEPAD.EXE program serves as an editor for plain ASCII text files.
+Text, in ASCII, adheres to a simple principle where characters are mapped to specific numbers. This method is highly space-efficient; fifty characters of text equate to fifty bytes of data. Text files in Linux systems often utilize this format, and numerous Linux tools are designed to handle such files. Even in Windows systems, the importance of ASCII text format is acknowledged. For instance, the renowned ***notepad.exe*** program serves as an editor for plain ASCII text files.
 
 The `less` command is used in this way:
 
-`less`**&lt;text\_filename&gt;**
+`less` **&lt;text\_filename&gt;**
 
 and this will display the file to be read (not edited).
 
@@ -169,9 +169,9 @@ While exploring our Linux system, it's beneficial to identify the type of data a
 
 The `file` command is used in this way:
 
-`file`**&lt;file\_name&gt;**
+`file` **&lt;file\_name&gt;**
 
-The `file` command recognizes a wide range of file types. While it may seem that most files cannot be viewed as text, a surprising number can be. This is especially true of the important configuration files. During our adventure we will see that many features of the operating system are controlled by text configuration files and shell scripts. In Linux, there are no secrets!
+The `file` command recognizes a wide range of file types. While it may seem that most files cannot be viewed as text, a surprising number can be. This is especially true of the important configuration files. During our adventure, we will see that many features of the operating system are controlled by text configuration files and shell scripts. In Linux, there are no secrets!
 
 ### File Manipulation Commands
 
@@ -200,32 +200,38 @@ Before delving into specific commands, let's explore a feature within the shell 
 | --- | --- |
 | \* | Matches any characters. |
 | ? | Matches any single character. |
-| \[characters\] | Matches any character that is a member of the set ***characters***. The set of characters may also be expressed as a ***POSIX character class*** such as one of the following: |
+| \[characters\] | Matches any character that is a member of the set "characters". The set of characters may also be expressed as a [***POSIX***](https://en.wikipedia.org/wiki/POSIX) character class such as one of the following: |
 
-\[:alnum:\] --&gt; alphanumeric characters.  
-\[:alpha:\] --&gt; alphabetic characters.  
-\[:digit:\] --&gt; numeric characters.  
-\[:upper:\] --&gt; uppercase alphabetic characters.  
-\[:lower:\] --&gt; lowercase alphabetic characters.  
-\[!characters\] --&gt; Matches any character that is not a member of the set ***characters***.
+* ***\[:alnum:\]*** --&gt; alphanumeric characters.
+    
+* ***\[:alpha:\]*** --&gt; alphabetic characters.
+    
+* ***\[:digit:\]*** --&gt; numeric characters.
+    
+* ***\[:upper:***\] --&gt; uppercase alphabetic characters.
+    
+* ***\[:lower:\]*** --&gt; lowercase alphabetic characters.
+    
+* ***\[!characters\]*** --&gt; Matches any character that is **not** a member of the set "characters".
+    
 
-Some example use cases of wildcards are:
+Some example-use cases of wildcards are:
 
-* \* --&gt; all filenames.
+* ***\**** --&gt; all filenames.
     
-* b\* --&gt; all filenames beginning with the character "b".
+* ***b\**** --&gt; all filenames beginning with the character "b".
     
-* c\*.txt --&gt; all filenames beginning with a "c" and ending with ".txt".
+* ***c\*.txt*** --&gt; all filenames beginning with a "c" and ending with ".txt".
     
-* File??? --&gt; any file that begins with the characters "File" followed by exactly three more characters.
+* ***File???*** --&gt; any file that begins with the characters "File" followed by exactly three more characters.
     
-* \[abc\]\* --&gt; any filename beginning with an "a" or a "b" or a "c" followed by any other characters.
+* ***\[abc\]\**** --&gt; any filename beginning with an "a" or a "b" or a "c" followed by any other characters.
     
-* \[\[:lower:\]\]\* --&gt; any filename that begins with a lowercase character. This is an example of a character class.
+* ***\[\[:lower:\]\]\**** --&gt; any filename that begins with a lowercase character. This is an example of a character class.
     
-* Linux \[\[:digit:\]\] \[\[:digit:\]\] --&gt; any filename that begins with "Linux" followed by exactly two digits. It is another example of a character class.
+* ***Linux \[\[:digit:\]\] \[\[:digit:\]\]*** --&gt; any filename that begins with "Linux" followed by exactly two digits. It is another example of a character class.
     
-* \*\[!\[:upper:\]\] --&gt; any filename that does not end with an uppercase letter.
+* ***\*\[!\[:upper:\]\]*** --&gt; any filename that does not end with an uppercase letter.
     
 
 We can use wildcards with any command that accepts filename arguments.
@@ -238,13 +244,13 @@ The `cp` command copies files and directories. In its simplest form, it copies a
 
 The "..." signifies that an item can be repeated one or more times. Other useful examples of `cp` and its options include:
 
-* `cp`**&lt;file\_1&gt; &lt;file\_2&gt; --&gt;** copies the content of file\_1 into file\_2. If file\_2 does not exist, it is created.
+* `cp` ***&lt;file\_1&gt; &lt;file\_2&gt;*** \--&gt; copies the content of file\_1 into file\_2. If file\_2 does not exist, it is created.
     
-* `cp`*\-i*\*\*&lt;file\_1&gt; &lt;file\_2&gt; --&gt;\*\* since the interactive ("*\-i"*) option is specified, if file\_2 exists, the user is prompted before it is overwritten with the contents of file\_1.
+* `cp`\-i ***&lt;file\_1&gt; &lt;file\_2&gt;*** --&gt; since the interactive ("*\-i"*) option is specified, if file\_2 exists, the user is prompted before it is overwritten with the contents of file\_1.
     
-* `cp`**&lt;file\_1&gt; &lt;dir\_1&gt; --&gt;** copies the contents of file\_1 into a file named file\_1 inside of directory dir\_1.
+* `cp` ***&lt;file\_1&gt; &lt;dir\_1&gt;*** \--&gt; copies the contents of file\_1 into a file named file\_1 inside of directory dir\_1.
     
-* `cp`*\-R*\*\*&lt;dir\_1&gt; &lt;dir\_2&gt; --&gt;\*\* copies the contents of the directory dir\_1 into dir\_2. If directory dir\_2 does not exist, it is created. Otherwise, it creates a directory named dir\_1 within directory dir\_2.
+* `cp`\-R ***&lt;dir\_1&gt; &lt;dir\_2&gt;*** --&gt; copies the contents of the directory dir\_1 into dir\_2. If directory dir\_2 does not exist, it is created. Otherwise, it creates a directory named dir\_1 within directory dir\_2.
     
 
 ### mv
@@ -253,25 +259,25 @@ The `mv` command can either relocate or rename files and directories, depending 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698062133482/e8c92d2d-862d-4509-94ac-61a1464c9d74.png align="center")
 
-This changes the name of &lt;**filename\_1&gt;** to &lt;**filename\_2&gt;**. On the other hand, moving a file or directory from one location to another is done this way:
+This changes the name of filename\_1 to filename\_2. On the other hand, moving a file or directory from one location to another is done this way:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698062531020/d4a565e4-218c-4f2e-84fa-f7ad4bcf9d3e.png align="center")
 
-Example use cases of `mv` are applied as in `cp` above.
+Example-use cases of `mv` are the same as in `cp` above.
 
 ### rm
 
-The `rm` command removes (deletes) files and directories. We use basic `rm` for files and the recursive `rm` ("`rm`*\-r*") for directories. Usage below:
+The `rm` command removes (deletes) files and directories. We use basic `rm` for files and the recursive `rm` (`rm-r`) for directories. Usage below:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698063988959/34fd981f-69a2-48cb-8d22-ed45982bc7e7.png align="center")
 
 Example use cases of `rm` and its options include:
 
-* `rm`**&lt;file1&gt; &lt;file2&gt; --&gt;** deletes file1 and file2.
+* `rm`***&lt;file1&gt; &lt;file2&gt;*** \--&gt; deletes file1 and file2.
     
-* `rm`*\-i*\*\*&lt;file1&gt; &lt;file2&gt; --&gt;\*\* deletes file1 and file2, but first displays a prompt (interactive) each time the deletion is to take place.
+* `rm`\-i ***&lt;file1&gt; &lt;file2&gt;*** --&gt; deletes file1 and file2, but first displays a prompt (interactive) each time the deletion is to take place.
     
-* `rm`*\-r*\*\*&lt;dir1&gt; &lt;dir2&gt; --&gt;\*\* deletes directories dir1 and dir2, along with all of their contents (recursive deletion).
+* `rm`\-r ***&lt;dir1&gt; &lt;dir2&gt;*** --&gt; deletes directories dir1 and dir2, along with all of their contents (recursive deletion).
     
 
 **Note Below**
@@ -303,9 +309,9 @@ As the commands discussed here allow multiple filenames and directories as input
 
 | Command | What it does |
 | --- | --- |
-| `cp` \*.txt ***text\_files*** | Duplicate all files in the present working directory that conclude with the ".txt" characters and move them to an existing directory named ***text\_files***. |
-| `mv` &lt;**dir1&gt;** ../\*.bak &lt;**dir2&gt;** | Transfer the subdirectory &lt;**dir1&gt;** and all files with names ending in ".bak" from the parent directory of the current working directory to an existing directory called &lt;**dir2&gt;**. |
-| rm \*~ | Remove all files in the current working directory that have names ending with the character "~". Certain applications generate backup files following this naming convention. Executing this command will clear these files from the directory. |
+| `cp` ***\*.txt*** ***text\_files/*** | Duplicate all files in the present working directory that conclude with the ".txt" characters and move them to an existing directory named ***text\_files***. |
+| `mv` ***&lt;dir1&gt; ../\*.bak*** ***&lt;dir2&gt;/*** | Transfers a subdirectory in the present working directory, ***&lt; dir1&gt;*** and all files with names ending in “.bak” from the parent directory of the present working directory to an existing directory in the present working directory, ***&lt; dir2&gt;***. |
+| `rm` ***\*~*** | Remove all files in the current working directory that have names ending with the character "~". Certain applications generate backup files following this naming convention. Executing this command will clear these files from the directory. |
 
 ***Next topic:***
 
