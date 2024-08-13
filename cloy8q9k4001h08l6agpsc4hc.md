@@ -8,9 +8,9 @@ tags: linux, vim, shell, text-editors, vi
 
 ---
 
-Before we dive deep into the topic, you must have wondered what "vi(m)" means. I wrote it that way because any command I would be teaching you about applies to both ***vi*** and ***vim*** text editors. ***VIM*** stands for ***V***i ***IM***proved, so you get the gist.
+Before we dive deep into the topic, you must have wondered what "vi(m)" means. I wrote it that way because any command I would be teaching you would apply to both the ***vi*** and ***vim*** text editors. ***VIM*** stands for ***V***i ***Im***proved, so you get the gist.
 
-The default editor bundled with the UNIX operating system is referred to as ***vi***, short for "***visual editor*"**. Other alternative editors for UNIX environments include ***pico*** and ***emacs***, which is a product of GNU. The vi editor in UNIX operates in two modes:
+The default editor bundled with the UNIX operating system is referred to as ***vi***, short for "***visual editor*"**. Other alternative editors for UNIX environments include [pico](https://en.wikipedia.org/wiki/Pico_(text_editor)) and [emacs](https://en.wikipedia.org/wiki/Emacs), which is a product of [GNU](https://en.wikipedia.org/wiki/GNU). The vi editor in UNIX operates in two modes:
 
 1. ***Command mode***, where commands are entered to perform actions on the file.
     
@@ -19,13 +19,13 @@ The default editor bundled with the UNIX operating system is referred to as ***v
 
 In command mode, each character entered is a command affecting the text file, and typing a character might switch vi to insert mode. In insert mode, every typed character is added to the file, and pressing the ***&lt;Esc&gt;*** (Escape) key turns off insert mode.
 
-Though there are numerous vi commands, beginners often find just a few essential commands sufficient. This webpage offers a selection of basic vi commands, with asterisks (\*) marking the most fundamental and useful ones. With practice, these commands should become second nature.
+Although there are numerous vi commands, beginners often find just a few essential commands sufficient. This article offers a selection of basic vi commands, with asterisks (\*) marking the most fundamental and useful ones. With practice, these commands should become second nature.
 
-It's important to note that both UNIX and vi are ***case-sensitive***. Using a capital letter instead of a lowercase one can yield unexpected results.
+It is important to note that commands in vi(m) are ***case-sensitive***. Using an uppercase letter instead of lowercase can yield unexpected results.
 
 ### Basic Vi(m) Commands
 
-Outlined in the table below are the basic vi/vim commands. Remember that "\*" is not part of the commands, but to tell you that those commands marked with asterisks are the fundamental and most useful commands.
+Outlined in the table below are the basic vi/vim commands. Remember that "\*" is not part of the commands, but to tell you that the commands marked with asterisks are the fundamental and most useful commands.
 
 | COMMAND | RESULT OF COMMAND |
 | --- | --- |
@@ -93,11 +93,11 @@ Outlined in the table below are the basic vi/vim commands. Remember that "\*" is
 
 **Note Below:**
 
-1. Unlike PC editors, you cannot highlight and delete text here, you can only use commands.
+1. Unlike GUI editors, you cannot highlight and delete text here, you can only use commands.
     
 2. The undo command acts like a toggle, undoing and redoing your last action. You cannot go back more than one step.
     
-3. Unlike PC editors, the mouse cannot move the cursor here. You must use the key commands outlined above. Arrow keys may also work for some UNIX shells but are better avoided because they may produce unwanted behaviour.
+3. Unlike GUI editors, the mouse cannot move the cursor here. You must use the key commands outlined above. Arrow keys may also work for some UNIX shells but are better avoided because they may produce unwanted behaviour.
     
 4. The cursor moves to the bottom of the screen whenever the ":" (semi-colon) is typed (when not in insert mode).
     
@@ -110,4 +110,8 @@ Outlined in the table below are the basic vi/vim commands. Remember that "\*" is
 
 ### Conclusion
 
-I hope you found this content as enjoyable to read as I did to write. If you are interested in more content like this, please navigate to my profile and follow my social media channels. There, I document most of what I am learning and the projects I am currently working on.
+I hope you found this content as enjoyable to read as I did to write. If you are interested in more content like this, please navigate to my profile and follow me for more content of the same nature.
+
+**Connect with Me**
+
+Feel free to reach out [v](https://x.com/IAshimonye83170?source=about_page-------------------------------------)i[a](https://x.com/IAshimonye83170?source=about_page-------------------------------------) [X](https://x.com/IAshimonye83170) or [Lin](https://www.linkedin.com/in/ikechukwu-ashimonye-262944283)[kedIn](https://www.linkedin.com/in/ikechukwu-ashimonye-262944283) [](https://www.linkedin.com/in/ikechukwu-ashimonye-262944283/?source=about_page-------------------------------------)if [](https://www.linkedin.com/in/ikechukwu-ashimonye-262944283/?source=about_page-------------------------------------)[y](https://x.com/IAshimonye83170?source=about_page-------------------------------------)ou're interested in collaborating on projects or just want to chat about tech, design, or anything in-between. Let's create something amazing together!
