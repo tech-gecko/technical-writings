@@ -244,11 +244,11 @@ The `cp` command copies files and directories. In its simplest form, it copies a
 
 The "..." signifies that an item can be repeated one or more times. Other useful examples of `cp` and its options include:
 
-* `cp` ***&lt;file\_1&gt; &lt;file\_2&gt;*** \--&gt; copies the content of file\_1 into file\_2. If file\_2 does not exist, it is created.
+* `cp` ***&lt;file\_1&gt; &lt;file\_2&gt;*** --&gt; copies the content of file\_1 into file\_2. If file\_2 does not exist, it is created.
     
 * `cp`\-i ***&lt;file\_1&gt; &lt;file\_2&gt;*** --&gt; since the interactive ("*\-i"*) option is specified, if file\_2 exists, the user is prompted before it is overwritten with the contents of file\_1.
     
-* `cp` ***&lt;file\_1&gt; &lt;dir\_1&gt;*** \--&gt; copies the contents of file\_1 into a file named file\_1 inside of directory dir\_1.
+* `cp` ***&lt;file\_1&gt; &lt;dir\_1&gt;*** --&gt; copies the contents of file\_1 into a file named file\_1 inside of directory dir\_1.
     
 * `cp`\-R ***&lt;dir\_1&gt; &lt;dir\_2&gt;*** --&gt; copies the contents of the directory dir\_1 into dir\_2. If directory dir\_2 does not exist, it is created. Otherwise, it creates a directory named dir\_1 within directory dir\_2.
     
@@ -273,7 +273,7 @@ The `rm` command removes (deletes) files and directories. We use basic `rm` for 
 
 Example use cases of `rm` and its options include:
 
-* `rm`***&lt;file1&gt; &lt;file2&gt;*** \--&gt; deletes file1 and file2.
+* `rm`***&lt;file1&gt; &lt;file2&gt;*** --&gt; deletes file1 and file2.
     
 * `rm`\-i ***&lt;file1&gt; &lt;file2&gt;*** --&gt; deletes file1 and file2, but first displays a prompt (interactive) each time the deletion is to take place.
     
@@ -309,9 +309,9 @@ As the commands discussed here allow multiple filenames and directories as input
 
 | Command | What it does |
 | --- | --- |
-| `cp` ***\*.txt*** ***text\_files/*** | Duplicate all files in the present working directory that conclude with the ".txt" characters and move them to an existing directory named ***text\_files***. |
-| `mv` ***&lt;dir1&gt; ../\*.bak*** ***&lt;dir2&gt;/*** | Transfers a subdirectory in the present working directory, ***&lt; dir1&gt;*** and all files with names ending in “.bak” from the parent directory of the present working directory to an existing directory in the present working directory, ***&lt; dir2&gt;***. |
-| `rm` ***\*~*** | Remove all files in the current working directory that have names ending with the character "~". Certain applications generate backup files following this naming convention. Executing this command will clear these files from the directory. |
+| `cp *.txt text_files/` | Duplicate all files in the present working directory that conclude with the ".txt" characters and move them to an existing directory named ***text\_files***. |
+| `mv <dir1> ../*.bak <dir2>/` | Transfers a subdirectory in the present working directory, ***&lt; dir1&gt;*** and all files with names ending in “.bak” from the parent directory of the present working directory to an existing directory in the present working directory, ***&lt; dir2&gt;***. |
+| `rm *~` | Remove all files in the current working directory that have names ending with the character "~". Certain applications generate backup files following this naming convention. Executing this command will clear these files from the directory. |
 
 ***Next topic:***
 
