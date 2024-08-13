@@ -39,7 +39,7 @@ The shell presents the CLI, that alone is its importance. If, on the other hand,
 
 * It makes your work ***less boring***, as you can automate repetitive tasks.
     
-* It makes your work ***less error-prone.***
+* It makes your work ***less error prone.***
     
 * It makes your work ***more reproducible***, as it keeps a history of your work and commands.
     
@@ -62,7 +62,7 @@ There are more shell types than the ones outlined below, hence the word "main". 
 
 * ***The Bourne shell (sh)*** - The first ever type of shell, programmed by Stephen Bourne in AT&T. It is also known as the Primary Unix Shell. Examples are ksh, sh and Bash.
     
-* ***TheCshell(csh)*** - The Unix enhancement shell, written by Bill Joy.
+* ***The C shell(csh)*** - The Unix enhancement shell, written by Bill Joy.
     
 
 ### Shell Prompt
@@ -75,7 +75,7 @@ The shell Prompt takes the first written word as a command and executes the comm
 
 If this post was helpful to you, then you should consider following us or subscribing to our newsletter for more content of the same nature. Also, liking and sharing the topic may be of help to others.
 
-If you have any questions you need answers to, comment them below!
+If you have any question you need answers to, comment them below!
 
 ***Next Topic:***
 
@@ -83,4 +83,8 @@ If you have any questions you need answers to, comment them below!
 
 ### Conclusion
 
-I hope you found this content as enjoyable to read as I did to write. If you are interested in more content like this, please navigate to my profile and follow my social media channels. There, I document most of what I am learning and the projects I am currently working on.
+I hope you found this content as enjoyable to read as I did to write. If you are interested in more content like this, please navigate to my profile and follow me for more content of the same nature.
+
+**Connect with Me**
+
+Feel free to reach out via [X](https://x.com/IAshimonye83170) or [Lin](https://www.linkedin.com/in/ikechukwu-ashimonye-262944283)[kedIn](https://www.linkedin.com/in/ikechukwu-ashimonye-262944283) if you’re interested in collaborating on projects or just want to chat about tech, design, or anything in-between. Let’s create something amazing together!
